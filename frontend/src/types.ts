@@ -20,3 +20,11 @@ export interface StatementLine {
   effective_on: string;
   postings: Posting[];
 }
+
+/** DRF page envelope used by GET /api/loans/:id/statement/. */
+export interface Paginated<T> {
+  count: number;
+  next: string | null;
+  previous: string | null;
+  results: T[];
+}
