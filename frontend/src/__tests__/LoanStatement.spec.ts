@@ -42,6 +42,7 @@ const stubs = { RouterLink: { template: "<a><slot /></a>" } };
 afterEach(() => vi.clearAllMocks());
 
 describe("LoanStatement", () => {
+  // Comentario de prueba.
   it("renders running balances from the statement", async () => {
     const wrapper = mount(LoanStatement, {
       props: { id: "1" },
